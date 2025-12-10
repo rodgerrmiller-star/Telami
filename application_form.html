@@ -1,74 +1,442 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-<title>Application Form</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form | Telami Teachers and Business Training Centre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply to Telami Teachers and Business Training Centre online. Start your journey in teacher training or business studies today.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.telamietham.ac.ke/application_form.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<h2>Application Form</h2>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<form action="application_form.php" method="POST">
-  <div class="mb-3">
-    <label for="fullName" class="form-label">Full name (as on certificates)</label>
-    <input required type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g. JOSEPH K. OTIENO">
-  </div>
+    <!-- Preloader -->
+    <div id="over-layer"></div>
+    <div class="pre-loader">
+        <div class="load-er"></div>
+        <p>Loading...</p>
+    </div>
 
-  <div class="mb-3">
-    <label for="dob" class="form-label">Date of birth</label>
-    <input required type="date" class="form-control" id="dob" name="dob">
-  </div>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center">
+                        <div class="me-4">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254712931101">+254 712 931 101</a>
+                        </div>
+                        <div class="me-4">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@telamietham.ac.ke">info@telamietham.ac.ke</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Njathaini, Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <div class="mb-3">
-    <label for="courseCategory" class="form-label">Course category</label>
-    <select required id="courseCategory" name="courseCategory" class="form-select">
-      <option value="">-- Select a course --</option>
-    </select>
-    <small class="form-text text-muted">The list is fetched from the Courses page.</small>
-  </div>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo_telami.png" alt="Telami Etham College Logo">
+                <span class="ms-3">Telami College</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a class="dropdown-item" href="courses.html#teaching">Teaching Programs</a></li>
+                            <li><a class="dropdown-item" href="courses.html#business">Business Programs</a></li>
+                            <li><a class="dropdown-item" href="courses.html#short-courses">Short Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="application_form.html" class="btn-apply text-white">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input required type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
-  </div>
+    <div id="main-content">
+        <!-- Page Header -->
+        <section class="py-5 bg-light text-center"
+            style="background: linear-gradient(rgba(13, 71, 161, 0.8), rgba(13, 71, 161, 0.8)), url('images/WhatsApp Image 2025-11-19 at 2.00.47 PM (7).jpeg') center/cover no-repeat;">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold text-white mb-3">Admission Application</h1>
+                <p class="lead text-white-50">Start your journey with us.</p>
+            </div>
+        </section>
 
-  <div class="mb-3">
-    <label for="idNumber" class="form-label">ID Number</label>
-    <input required type="text" class="form-control" id="idNumber" name="idNumber" placeholder="e.g. 12345678">
-  </div>
+        <!-- Application Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-header bg-primary text-white text-center py-4">
+                                <h4 class="mb-0 text-white">Application Form</h4>
+                            </div>
+                            <div class="card-body p-4 p-md-5">
+                                <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
+                                    <i class="fas fa-info-circle me-3 fa-lg"></i>
+                                    <div>
+                                        <strong>Note:</strong> A non-refundable application fee of <strong>KES
+                                            1,000</strong> is required to complete this process.
+                                    </div>
+                                </div>
 
-  <div class="mb-3">
-    <label for="phone" class="form-label">Phone Number</label>
-    <input required type="tel" class="form-control" id="phone" name="phone" placeholder="e.g. +2547XXXXXXXX">
-  </div>
+                                <form id="admissionForm">
+                                    <h5 class="mb-3 border-bottom pb-2">Personal Details</h5>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="address" class="form-label">Postal Address</label>
+                                            <input type="text" class="form-control" id="address"
+                                                placeholder="e.g P.O Box 12345-00100 Nairobi">
+                                        </div>
+                                    </div>
 
-  <button type="submit" class="btn btn-primary">Submit Application</button>
-</form>
+                                    <h5 class="mb-3 border-bottom pb-2">Course Details</h5>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                            <label for="course" class="form-label">Select Course</label>
+                                            <select class="form-select" id="course" required>
+                                                <option value="" selected disabled>Choose...</option>
+                                                <optgroup label="Teaching Programs">
+                                                    <option value="DTE">Diploma in Teacher Education (Primary)</option>
+                                                    <option value="ECDE">Diploma in ECDE</option>
+                                                    <option value="DSTE">Diploma in Secondary Teacher Education</option>
+                                                </optgroup>
+                                                <optgroup label="Business Programs">
+                                                    <option value="DBM">Diploma in Business Management</option>
+                                                    <option value="DHRM">Diploma in HR Management</option>
+                                                    <option value="DSCM">Diploma in Supply Chain Management</option>
+                                                </optgroup>
+                                                <optgroup label="Short Courses">
+                                                    <option value="ICT">Computer Packages</option>
+                                                    <option value="Digital Marketing">Digital Marketing</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="intake" class="form-label">Intake</label>
+                                            <select class="form-select" id="intake" required>
+                                                <option value="" selected disabled>Choose...</option>
+                                                <option value="January">January</option>
+                                                <option value="May">May</option>
+                                                <option value="September">September</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="qualifications" class="form-label">Previous
+                                                Qualifications</label>
+                                            <textarea class="form-control" id="qualifications" rows="3"
+                                                placeholder="List your high school grade and other certificates"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="certificates" class="form-label">Attach Certificates & Result
+                                                Slips</label>
+                                            <div class="form-text text-muted small mb-2">Accepted formats: PDF, JPG,
+                                                PNG. Please attach your KCSE result slip and any other relevant
+                                                certificates.</div>
+                                            <input class="form-control" type="file" id="certificates" multiple
+                                                accept=".pdf,.jpg,.jpeg,.png">
+                                        </div>
+                                    </div>
 
-<script>
-// Populate course dropdown by scraping course headings from courses.html
-fetch('courses.html').then(r => r.text()).then(text => {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(text, 'text/html');
-  const items = [];
-  // gather headings for course cards (h4 elements)
-  doc.querySelectorAll('.course-body h4').forEach(h => {
-    const txt = h.textContent.trim();
-    if (txt) items.push(txt);
-  });
-  const select = document.getElementById('courseCategory');
-  // remove duplicates
-  items.filter((v,i,a)=>a.indexOf(v)===i).forEach(it => {
-    const opt = document.createElement('option');
-    opt.value = it;
-    opt.textContent = it;
-    select.appendChild(opt);
-  });
-}).catch(e => console.error('Could not populate courses list', e));
-</script>
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn btn-primary btn-lg">Proceed to Payment</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-<br>
-<a href="tel:254712931101" style="background:green;color:white;padding:10px;">Proceed to Payment</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h4>Telami Teachers and Business Training Centre</h4>
+                    <p>Empowering the next generation of educators and business leaders through quality training and
+                        character development.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="application_form.html">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Njathaini, Nairobi, Kenya</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254712931101">+254 712 931 101</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@telamietham.ac.ke">info@telamietham.ac.ke</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates.</p>
+                    <form class="newsletter-form mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <p class="mb-0">&copy; 2024 Telami Etham College. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <p class="mb-0 text-muted small">Designed with excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="applicationSummary" class="mb-3"></div>
+                    <div class="alert alert-warning">
+                        Clicking "Pay Now" will open the secure payment gateway.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" id="payNowBtn">Pay KES 1,000 & Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+        // Use the same JS logic for preloader/firebase/forms as index.html
+        // Simple Preloader
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                const preloader = document.querySelector('.pre-loader');
+                const overlayer = document.getElementById('over-layer');
+                if (preloader) preloader.style.opacity = '0';
+                if (overlayer) overlayer.style.opacity = '0';
+                setTimeout(() => {
+                    if (preloader) preloader.style.display = 'none';
+                    if (overlayer) overlayer.style.display = 'none';
+                }, 500);
+            }, 500);
+        });
+
+        // Sticky Navbar & Back to Top
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const backToTop = document.querySelector('.back-to-top');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm');
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.classList.remove('shadow-sm');
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // Firebase Config
+        const firebaseConfig = {
+            apiKey: "AIzaSyDEXAMPLEEXAMPLEEXAMPLE",
+            authDomain: "telami-etham-college.firebaseapp.com",
+            databaseURL: "https://telami-etham-college.firebaseio.com",
+            projectId: "telami-etham-college",
+            storageBucket: "telami-etham-college.appspot.com",
+            messagingSenderId: "123456789012",
+            appId: "1:123456789012:web:abc123def456ghi789jkl"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        // Admission Form Logic
+        const admissionForm = document.getElementById('admissionForm');
+        const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+
+        admissionForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            const intake = document.getElementById('intake').value;
+
+            // Handle Files
+            const certificatesInput = document.getElementById('certificates');
+            const certificateFiles = [];
+            if (certificatesInput.files.length > 0) {
+                for (let i = 0; i < certificatesInput.files.length; i++) {
+                    certificateFiles.push(certificatesInput.files[i].name);
+                }
+            }
+
+            const summary = `
+                <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+                <p><strong>Program:</strong> ${course}</p>
+                <p><strong>Intake:</strong> ${intake}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Attached Documents:</strong> ${certificateFiles.length > 0 ? certificateFiles.join(', ') : 'None'}</p>
+            `;
+
+            document.getElementById('applicationSummary').innerHTML = summary;
+            paymentModal.show();
+
+            document.getElementById('payNowBtn').onclick = function () {
+                makePayment(firstName, lastName, email, phone, course, intake, certificateFiles);
+            };
+        });
+
+        function makePayment(firstName, lastName, email, phone, course, intake, certificateFiles) {
+            FlutterwaveCheckout({
+                public_key: "FLWPUBK_TEST-EXAMPLE-X",
+                tx_ref: "TEC-" + Date.now(),
+                amount: 1000,
+                currency: "KES",
+                country: "KE",
+                payment_options: "card,mpesa",
+                customer: {
+                    email: email,
+                    phone_number: phone,
+                    name: firstName + " " + lastName
+                },
+                callback: function (response) {
+                    if (response.status === 'successful') {
+                        saveApplication(firstName, lastName, email, phone, course, intake, response.transaction_id, certificateFiles);
+                        alert('Payment successful! Application submitted.');
+                        paymentModal.hide();
+                        admissionForm.reset();
+                    } else {
+                        alert('Payment failed. Please try again.');
+                    }
+                },
+                customizations: {
+                    title: "Telami Teachers and Business Training Centre",
+                    description: "Application Fee",
+                    logo: "https://via.placeholder.com/150"
+                }
+            });
+        }
+
+        function saveApplication(firstName, lastName, email, phone, course, intake, txId, certificateFiles) {
+            const applicationsRef = database.ref('applications');
+            // Note: In a real production app, files should be uploaded to Firebase Storage
+            // and the download URLs stored here. This example stores filenames only.
+            applicationsRef.push().set({
+                firstName, lastName, email, phone, course, intake, txId,
+                certificateFiles: certificateFiles || [],
+                timestamp: firebase.database.ServerValue.TIMESTAMP
+            });
+        }
+    </script>
 </body>
+
 </html>
